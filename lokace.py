@@ -18,12 +18,12 @@ class Lokace:
                     + self.popis + "\n\n")
         smery = ""
         if self.sever:
-            smery += "sever "
+            smery += "   sever   "
         if self.jih:
-            smery += "jih "
+            smery += "   jih   "
         if self.zapad:
-            smery += "západ "
+            smery += "   západ   "
         if self.vychod:
-            smery += "východ "
+            smery += "   východ   "
         vystup += "Můžeš jít na {0}\n".format(smery)
         return vystup

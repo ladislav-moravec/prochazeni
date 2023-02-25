@@ -29,7 +29,7 @@ class Hra:
     # Zpracuje textový příkaz
     def zpracuj_prikaz(self, prikaz):
         prikaz = prikaz.lower()
-        if prikaz.startswith("jdi"):
+        if prikaz.startswith("jdi") or prikaz.startswith("jít"):
 
             if prikaz.endswith("sever") and self.aktualni_lokace.sever:
                 self.aktualni_lokace = self.aktualni_lokace.sever
